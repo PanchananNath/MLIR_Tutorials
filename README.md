@@ -21,52 +21,50 @@ This repository contains a structured series covering MLIR, compiler optimizatio
 
 # Part 1 - What is MLIR?
 
-Content for Part 1.
+
 
 ---
 
 # Part 2 - Memory in MLIR
 
-Content for Part 2.
+
 
 ---
 
 # Part 3 - Affine Dialect and OpenMP
 
-Content for Part 3.
 
 ---
 
 # Part 4 - Linear Algebra and Linalg
 
-Content for Part 4.
+
 
 ---
 
 # Part 5 - Neural Networks and Tensors
 
-Content for Part 5.
+
 
 ---
 
 # Part 6 - e-graphs and Term Rewriting
 
-Content for Part 6.
+
 
 ---
 
 # Part 7 - NVIDIA GPU Execution
 
-Content for Part 7.
+
 
 ---
 
 # Part 8 - Transformer Architecture
 
-Content for Part 8.
 
 ---
 
 # Part 9 - Superoptimizing Deep Learning
 
-Content for Part 9.
+
