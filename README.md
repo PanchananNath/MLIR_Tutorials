@@ -18,36 +18,67 @@ This repository contains a structured series covering MLIR, compiler optimizatio
 
 # Installing MLIR
 
-MLIR requires a few dependencies to be installed, follow the steps below
+MLIR requires a few dependencies to be installed. Follow the steps below.
 
-# S1- For Linux
+## Step 1: Install Dependencies (Linux)
 
-apt-get install cmake ninja-build ccache
+Install the required build tools:
 
-# S2- Clone the LLVM repository
+```bash
+sudo apt-get update
+sudo apt-get install -y cmake ninja-build ccache
+```
 
-git clone https://github.com/llvm/llvm-project
+## Step 2: Clone the LLVM Repository
 
-# S3- Build MLIR from source, this might take a long time to build
+Clone the LLVM project repository, which contains MLIR:
 
-mkdir llvm-project/build
+```bash
+git clone https://github.com/llvm/llvm-project.git
+```
+
+## Step 3: Build MLIR from Source
+
+> **Note:** Building MLIR can take a significant amount of time depending on your system.
+
+Create a build directory and configure the project:
+
+```bash
+mkdir -p llvm-project/build
 cd llvm-project/build
+
 cmake -G Ninja ../llvm \
-   -DLLVM_ENABLE_PROJECTS=mlir \
-   -DLLVM_BUILD_EXAMPLES=ON \
-   -DLLVM_TARGETS_TO_BUILD="Native;ARM;X86" \
-   -DCMAKE_BUILD_TYPE=Release \
-   -DLLVM_ENABLE_ASSERTIONS=ON \
-   -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ \
-   -DLLVM_CCACHE_BUILD=ON
-   
+  -DLLVM_ENABLE_PROJECTS=mlir \
+  -DLLVM_BUILD_EXAMPLES=ON \
+  -DLLVM_TARGETS_TO_BUILD="Native;ARM;X86" \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DLLVM_ENABLE_ASSERTIONS=ON \
+  -DCMAKE_C_COMPILER=clang \
+  -DCMAKE_CXX_COMPILER=clang++ \
+  -DLLVM_CCACHE_BUILD=ON
+```
+
+Build and run MLIR tests:
+
+```bash
 cmake --build . --target check-mlir
+```
+
+Install MLIR:
+
+```bash
 cmake --build . --target install
+```
 
+## Step 4: Verify the Installation
 
-# S4- Check the version of MLIR installed.
+Check the installed MLIR version:
 
+```bash
 mlir-opt --version
+```
+
+If the installation was successful, the command will print the installed MLIR version information.
 
 
 # Part 1 - What is MLIR?
