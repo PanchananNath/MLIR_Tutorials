@@ -16,6 +16,40 @@ This repository contains a structured series covering MLIR, compiler optimizatio
 
 ---
 
+# Installing MLIR
+
+MLIR requires a few dependencies to be installed, follow the steps below
+
+# S1- For Linux
+
+apt-get install cmake ninja-build ccache
+
+# S2- Clone the LLVM repository
+
+git clone https://github.com/llvm/llvm-project
+
+# S3- Build MLIR from source, this might take a long time to build
+
+mkdir llvm-project/build
+cd llvm-project/build
+cmake -G Ninja ../llvm \
+   -DLLVM_ENABLE_PROJECTS=mlir \
+   -DLLVM_BUILD_EXAMPLES=ON \
+   -DLLVM_TARGETS_TO_BUILD="Native;ARM;X86" \
+   -DCMAKE_BUILD_TYPE=Release \
+   -DLLVM_ENABLE_ASSERTIONS=ON \
+   -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ \
+   -DLLVM_CCACHE_BUILD=ON
+   
+cmake --build . --target check-mlir
+cmake --build . --target install
+
+
+# S4- Check the version of MLIR installed.
+
+mlir-opt --version
+
+
 # Part 1 - What is MLIR?
 
 
