@@ -81,51 +81,7 @@ mlir-opt --version
 If the installation was successful, the command will print the installed MLIR version information.
 
 
-# Part 1 - What is MLIR?
 
-
-
----
-
-# Part 2 - Memory in MLIR
-
-
-
----
-
-# Part 3 - Affine Dialect and OpenMP
-
-
----
-
-# Part 4 - Linear Algebra and Linalg
-
-
-
----
-
-# Part 5 - Neural Networks and Tensors
-
-
-
----
-
-# Part 6 - e-graphs and Term Rewriting
-
-
-
----
-
-# Part 7 - NVIDIA GPU Execution
-
-
-
----
-
-# Part 8 - Transformer Architecture
-
-
----
 
 # Part 9 - Superoptimizing Deep Learning
 
