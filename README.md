@@ -2,6 +2,8 @@
 
 This repository contains a structured series covering MLIR, compiler optimizations, GPU execution, transformers, and deep learning superoptimization.
 
+### Note: The "ML" part of the MLIR name stands for "multi-level" (not machine learning!). 
+
 ## Table of Contents
 
 - [Part 1 - What and why MLIR?](#part-1---what-is-mlir)
