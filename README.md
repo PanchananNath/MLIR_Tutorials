@@ -41,7 +41,7 @@ git clone https://github.com/llvm/llvm-project.git
 
 ## Step 3: Build MLIR from Source
 
-> **Note:** Building MLIR can take a significant amount of time depending on your system.
+> **Note:** Building MLIR can take a significant amount of time depending on your system (This tutorial is done on Linux based OS).
 
 Create a build directory and configure the project:
 
