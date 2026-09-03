@@ -22,7 +22,7 @@ This repository contains a structured series covering MLIR, compiler optimizatio
 
 MLIR requires a few dependencies to be installed. Follow the steps below.
 
-## Step 1: Install Dependencies (Linux)
+## Step 1: Install Dependencies 
 
 Install the required build tools:
 
