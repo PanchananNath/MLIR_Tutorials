@@ -1,6 +1,6 @@
 # MLIR tutorials for Deep Learning optimization
 
-This repository contains a structured series covering MLIR, compiler optimizations, GPU execution, transformers, and deep learning superoptimization.
+This repository contains a structured topics covering MLIR, compiler optimizations, GPU execution, transformers, and deep learning superoptimization.
 
 ### Note: The "ML" part of the MLIR name stands for "multi-level" (not machine learning!). 
 
