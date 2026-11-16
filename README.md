@@ -1,4 +1,4 @@
-# MLIR tutorials for Deep Learning optimization series
+# MLIR tutorials for Deep Learning optimization
 
 This repository contains a structured series covering MLIR, compiler optimizations, GPU execution, transformers, and deep learning superoptimization.
 
